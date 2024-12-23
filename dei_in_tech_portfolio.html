@@ -11,119 +11,114 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
+            color: #333;
         }
-
-        header {
-            background: url('header-image.jpg') no-repeat center center/cover;
-            color: #fff;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-
-        main {
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
             padding: 20px;
-        }
-
-        section {
-            margin-bottom: 40px;
             background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        h2 {
-            color: #333;
-            font-size: 1.8rem;
+        h1, h2 {
+            color: #0056b3;
         }
-
-        p {
-            color: #555;
-        }
-
         ul {
-            margin-left: 20px;
+            padding-left: 20px;
+            list-style-type: disc;
         }
-
-        .references {
-            font-size: 0.9rem;
-            color: #333;
-        }
-
-        .references a {
-            color: #007acc;
+        a {
+            color: #0056b3;
             text-decoration: none;
         }
-
-        .references a:hover {
+        a:hover {
             text-decoration: underline;
+        }
+        .header-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
+        <!-- Add your image here -->
+        <img src="DEI.png" alt="Diversity in Tech" class="header-image">
         <h1>DEI in Tech: Real Challenges and Solutions</h1>
-    </header>
-    <main>
-        <section>
-            <h2>The Technical Side: Where Imposter Syndrome Meets Code</h2>
-            <p>Think about your first day at a tech job. Now imagine facing that with documentation that might as well be written in ancient Greek, while a voice in your head keeps whispering, "Everyone else probably gets this." This is what many women and LGBTQ+ folks deal with in tech – not just technical barriers, but the crushing weight of imposter syndrome that makes those barriers feel ten times higher.</p>
-            <p>Research has shown that software developers constantly seek information to further their work, but when that information resides in someone else's head (such as why certain decisions were made), it becomes slow or impossible to retrieve (Ko et al., 2007).</p>
-        </section>
-
-        <section>
-            <h2>The Culture Problem: Why People Leave</h2>
-            <p>Here's the hard truth: tech has a culture problem. Modern work environments are still dominated by men, who may speak loudly, out of turn, and disrespectfully, sometimes even engaging in sexual harassment (Wang, 2016). As Ko (2023) points out, "Computer science as a discipline, and the software industry that it shapes, has only just begun to consider the urgent need for cultural competence."</p>
-        </section>
-
-        <section>
-            <h2>Bridging the Gap: What Actually Works</h2>
-            <p>Effective communication requires empathy and teamwork. When communication is poor, teams become disconnected and produce software defects (Bettenburg & Hassan, 2013). The solution involves creating inclusive environments where cross-disciplinary collaborations can thrive, requiring open-mindedness about others' input and seeing the broader picture of how different perspectives fit together (Li et al., 2017).</p>
-        </section>
-
-        <section>
-            <h2>The Power of Codes of Conduct</h2>
-            <p>Enforced codes of conduct matter significantly. The Contributor Covenant has become the de facto standard for open source communities, but as it states: "Simply adopting [the] Contributor Covenant will not prevent conflict or toxicity in your community." Enforcement is key (Riggins, 2021).</p>
-        </section>
-
-        <section>
-            <h2>Practical Solutions That Make a Difference</h2>
-            <ul>
-                <li><strong>Structured mentoring programs</strong> matching newcomers with experienced professionals.</li>
-                <li><strong>Documentation that avoids assuming prior knowledge</strong> and supports diverse learning styles.</li>
-                <li><strong>Regular check-ins and support networks</strong> to ensure that employees feel heard and valued.</li>
-                <li><strong>Anonymous feedback channels</strong> to address concerns without fear of retaliation.</li>
-                <li><strong>Enforced codes of conduct</strong> with real consequences for violations.</li>
-                <li><strong>DEI training</strong> that goes beyond awareness to foster actionable change.</li>
-                <li><strong>Active sponsorship programs</strong> to promote underrepresented groups into leadership roles.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Conclusion</h2>
-            <p>The tech industry has serious work to do on DEI. We face structural issues, technical barriers exacerbated by imposter syndrome, and cultural obstacles driving people away. But increasing inclusivity in tech isn't just the right thing to do—it's the smart thing to do. As research shows, diverse teams lead to better innovation (Riggins, 2021), and isn't that what technology is supposed to be about?</p>
-        </section>
-
-        <section class="references">
-            <h2>References</h2>
-            <ul>
-                <li>Bettenburg, N., & Hassan, A. E. (2013). Studying the impact of social interactions on software quality. <em>Empirical Software Engineering, 18</em>(2), 375-431.</li>
-                <li>Ko, A. J. (2023). Chapter 3: Communication. In <em>Software Engineering: The Expert's Way</em>.</li>
-                <li>Ko, A. J., DeLine, R., & Venolia, G. (2007). Information needs in collocated software development teams. <em>ACM/IEEE International Conference on Software Engineering</em>, 344-353.</li>
-                <li>Li, P. L., Ko, A. J., & Begel, A. (2017). Cross-disciplinary perspectives on collaborations with software engineers. <em>International Workshop on Cooperative and Human Aspects of Software Engineering</em>, 2-8.</li>
-                <li>Riggins, J. (2021, November 30). WTF is Wrong with Open Source Communities? <em>Container Solutions Blog.</em> <a href="https://container-solutions.com/wtf-is-wrong-with-open-source-communities/">https://container-solutions.com/wtf-is-wrong-with-open-source-communities/</a></li>
-                <li>Wang, J. (2016). Female pursuit of Computer Science with Jennifer Wang. <em>Software Engineering Daily Podcast</em>.</li>
-                <li>Washington, A. N. (2020). When twice as good isn't enough: the case for cultural competence in computing. <em>ACM Technical Symposium on Computer Science Education</em>, 213-219.</li>
-            </ul>
-        </section>
-    </main>
+        <p>
+            Let's talk about making tech a better place for everyone. As Jennifer Riggins (2021) starkly points out in her analysis of open source communities, "If the tech industry has a diversity, equity and inclusion (DEI) problem, then the open source world has a catastrophe on its hands." The challenges run deep, with research showing that the dominant culture of many software engineering work environments can actively deter people from even pursuing careers in computer science (Ko, 2023).
+        </p>
+        <h2>The Technical Side: Where Imposter Syndrome Meets Code</h2>
+        <p>
+            Think about your first day at a tech job. Now imagine facing that with documentation that might as well be written in ancient Greek, while a voice in your head keeps whispering, "Everyone else probably gets this." This is what many women and LGBTQ+ folks deal with in tech – not just technical barriers, but the crushing weight of imposter syndrome that makes those barriers feel ten times higher.
+        </p>
+        <p>
+            Research has shown that software developers constantly seek information to further their work, but when that information resides in someone else's head (such as why certain decisions were made), it becomes slow or impossible to retrieve (Ko et al., 2007). This creates additional barriers for underrepresented groups who may already feel hesitant to ask questions.
+        </p>
+        <p>
+            The real kicker? This combination of technical barriers and imposter syndrome creates a nasty feedback loop:
+        </p>
+        <ul>
+            <li>Unclear documentation makes you hesitate to dive in.</li>
+            <li>Hesitation feels like proof that you're not "technical enough."</li>
+            <li>That feeling makes you less likely to speak up or ask questions.</li>
+            <li>Not asking questions means you struggle longer with technical issues.</li>
+            <li>And the cycle continues...</li>
+        </ul>
+        <h2>The Culture Problem: Why People Leave</h2>
+        <p>
+            Here's the hard truth: tech has a culture problem. Modern work environments are still dominated by men, who may speak loudly, out of turn, and disrespectfully, sometimes even engaging in sexual harassment (Wang, 2016). As Ko (2023) points out, "Computer science as a discipline, and the software industry that it shapes, has only just begun to consider the urgent need for cultural competence."
+        </p>
+        <h2>Bridging the Gap: What Actually Works</h2>
+        <p>
+            Effective communication requires empathy and teamwork. When communication is poor, teams become disconnected and produce software defects (Bettenburg & Hassan, 2013). The solution involves creating inclusive environments where cross-disciplinary collaborations can thrive, requiring open-mindedness about others' input and seeing the broader picture of how different perspectives fit together (Li et al., 2017).
+        </p>
+        <h2>The Power of Codes of Conduct</h2>
+        <p>
+            Enforced codes of conduct matter significantly. The Contributor Covenant [cited in Riggins, 2021] has become the de facto standard for open source communities, but as it states: "Simply adopting [the] Contributor Covenant will not prevent conflict or toxicity in your community." Enforcement is key.
+        </p>
+        <h2>Practical Solutions That Make a Difference</h2>
+        <ul>
+            <li>Structured mentoring programs matching newcomers with experienced professionals.</li>
+            <li>Documentation that avoids assuming prior knowledge and supports diverse learning styles.</li>
+            <li>Regular check-ins and support networks to ensure that employees feel heard and valued.</li>
+            <li>Anonymous feedback channels to address concerns without fear of retaliation.</li>
+            <li>Enforced codes of conduct with real consequences for violations.</li>
+            <li>DEI training that goes beyond awareness to foster actionable change.</li>
+            <li>Active sponsorship programs to promote underrepresented groups into leadership roles.</li>
+        </ul>
+        <h2>What Leaders Need to Do</h2>
+        <p>
+            As developer advocate Wesley Faulkner [quoted in Riggins, 2021] notes, even small changes in language can make a difference: "Removing [words like 'easy' and 'simple'] will help to not add additional pain and shame that comes with learning something new." Leaders must:
+        </p>
+        <ul>
+            <li>Prioritize DEI beyond lip service.</li>
+            <li>Set clear behavioral expectations and enforce them.</li>
+            <li>Lead by example.</li>
+            <li>Address imposter syndrome and create safe spaces for questions.</li>
+            <li>Build diverse leadership pipelines.</li>
+            <li>Measure and take accountability for DEI outcomes.</li>
+        </ul>
+        <h2>Conclusion</h2>
+        <p>
+            The tech industry has serious work to do on DEI. We face structural issues, technical barriers exacerbated by imposter syndrome, and cultural obstacles driving people away. But increasing inclusivity in tech isn't just the right thing to do—it's the smart thing to do. As research shows, diverse teams lead to better innovation (Riggins, 2021), and isn't that what technology is supposed to be about?
+        </p>
+        <p>
+            When organizations successfully address both psychological and technical barriers, they're not just checking boxes—they're positioning themselves for success by leveraging all available talent, not just the usual suspects. And when belonging becomes the norm rather than the exception, we can create environments where people don't have to spend energy proving they belong. Instead, they can spend their energy building, innovating, and creating a better tech industry for everyone.
+        </p>
+        <h2>References</h2>
+        <ul>
+            <li>Bettenburg, N., & Hassan, A. E. (2013). Studying the impact of social interactions on software quality. Empirical Software Engineering, 18(2), 375-431.</li>
+            <li>Ko, A. J. (2023). Chapter 3: Communication. In Software Engineering: The Expert's Way.</li>
+            <li>Ko, A. J., DeLine, R., & Venolia, G. (2007). Information needs in collocated software development teams. ACM/IEEE International Conference on Software Engineering, 344-353.</li>
+            <li>Li, P. L., Ko, A. J., & Begel, A. (2017). Cross-disciplinary perspectives on collaborations with software engineers. International Workshop on Cooperative and Human Aspects of Software Engineering, 2-8.</li>
+            <li>Riggins, J. (2021, November 30). WTF is Wrong with Open Source Communities? Container Solutions Blog. <a href="https://container-solutions.com/wtf-is-wrong-with-open-source-communities/">https://container-solutions.com/wtf-is-wrong-with-open-source-communities/</a></li>
+            <li>Wang, J. (2016). Female pursuit of Computer Science with Jennifer Wang. Software Engineering Daily Podcast.</li>
+            <li>Washington, A. N. (2020). When twice as good isn't enough: the case for cultural competence in computing. ACM Technical Symposium on Computer Science Education, 213-219.</li>
+        </ul>
+    </div>
 </body>
 </html>
